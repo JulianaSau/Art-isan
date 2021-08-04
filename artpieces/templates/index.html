@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Art-isan</title>
+	<!--<link rel="stylesheet" type="text/css" href="css/style.css">-->
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+        * {
+            margin: 0;
+            padding:0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        section {
+            box-sizing: border-box;
+            position: relative;
+            width: 100%;
+            min-height: 100vh;
+            padding: 100px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #202020;
+        }
+        
+        section header a {
+            text-decoration: none;
+
+        }
+
+        .circle{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: #017143;
+            clip-path: circle(600px at right 800px);
+        }
+
+        header {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 20px 100px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 5px 10px 100px rgba(0, 0, 0, 0.02);
+            background: #191919;
+        }
+
+        section header a h2{
+            color: #017143;
+            font-size: 3em;
+            font-weight: 900;
+        }
+
+        header .logo {
+            position: relative;
+            max-width: 80px;
+        }
+
+        header ul {
+            position:relative;
+            display: flex;
+        }
+
+        header ul li {
+            list-style: none;
+        }
+
+        header ul li a {
+            display: inline-block;
+            color: #fff;
+            font-weight: 400;
+            margin-left: 40px;
+            text-decoration: none;
+        }
+
+        .content {
+            position: relative;
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .content .textBox {
+            position: relative;
+            max-width: 600px;	
+        }
+
+        .content .textBox h2{
+            color: #333;
+            font-size: 4em;
+            line-height: 1.4em;
+            font-weight: 500;
+        }
+
+        .content .textBox h2 span {
+            color: #017143;
+            font-size: 1.2em;
+            font-weight: 900;
+        }
+
+        .content .textBox p {
+            color: #fff;
+        }
+
+        .content .textBox a {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 8px 20px;
+            background: #017143;
+            color: #fff;
+            border-radius: 40px;
+            font-weight: 500;
+            letter-spacing: 1px;
+            text-decoration: none;
+        }
+
+        .content .imgBox {
+            width: 600px;
+            display: flex;
+            justify-content: flex-end;
+            padding-right: 50px;
+            margin-top: 50px;
+        }
+
+        .content .imgBox img {
+            max-width: 340px;
+        }
+
+        .thumb{
+            position: absolute;
+            left: 50%;
+            bottom: 20px;
+            transform: translateX(-50%);
+            display: flex;
+        }
+
+        .thumb li {
+            list-style: none;
+            display: inline-block;
+            margin: 0 20px;
+            cursor:pointer;
+            transition: 0.5s;
+        }
+        .thumb li:hover {
+            transform: translateY(-15px);
+        }
+
+        .thumb li img {
+            max-width: 60px;
+        }
+
+        .social-media{
+            position: absolute;
+            top: 80%;
+            right: 30px;
+            transform: translateY(-50%);
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+        }
+
+        .social-media li {
+            list-style: none;
+            padding: 10px;
+        }
+
+        .social-media li a {
+            display: inline-block;
+            margin: 5px 0;
+            transform: scale(0.6);
+            filter: invert(1);
+        }
+    </style>
+</head>
+<body>
+	<section>
+		<div class="circle"></div>
+		<header>
+			<a href="#"><h2><span>Art-isan</span></h2></a>
+			<ul class="menu">
+				<li><a href="#">Home</a></li>
+				<li><a href="#">Categories</a></li>
+				<li><a href="#">What's New</a></li>
+				<li><a href="contacts.html">Contact Us</a></li>
+                <li><a href="#">Account</a></li>
+                <li><img src="#"></li>
+			</ul>
+		</header>
+
+		<div class="content">
+			<div class="textBox">
+				<h2><span>Art-isan</span></h2>
+				<p> Welcome to the world of world class art from Kenya. Ranging from art pieces to pottery and even sculptures
+				</p>
+                <p>
+                    Today is: {{today}}
+                </p>
+				<a href="login_reg.html">Log In</a>
+				<a href="login_reg.html">Register</a>
+			</div>
+		</div><!--content-->
+
+		<ul class="social-media">
+			<li><a href="#"><img src="images/facebook.png"></a></li>
+			<li><a href="#"><img src="images/twitter.png"></a></li>
+			<li><a href="#"><img src="images/instagram.png"></a></li>
+		</ul>
+    
+	</section>
+	
+
+</body>
+</html>

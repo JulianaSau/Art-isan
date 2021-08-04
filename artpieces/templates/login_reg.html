@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login/Register</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width initial-scale=1">
+	<!--<link rel="stylesheet" type="text/css" href="css/style.css">-->
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+        * {
+            margin: 0;
+            padding:0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        #content {
+            
+            position: relative;
+            /*width: 100%;
+            min-height: 80vh;
+            padding: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            box-sizing: border-box;
+            background: #202020;*/
+        }
+
+        #header a {
+            text-decoration: none;
+
+        }
+
+        #header {
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 20px 100px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 5px 10px 100px rgba(0, 0, 0, 0.02);
+            background: #191919;
+        }
+
+        #header a h2{
+            color: #017143;
+            font-size: 3em;
+            font-weight: 900;
+        }
+
+        #header .logo {
+            position: relative;
+            max-width: 80px;
+        }
+
+        #header ul {
+            position:relative;
+            display: flex;
+        }
+
+        #header ul li {
+            list-style: none;
+        }
+
+        #header ul li a {
+            display: inline-block;
+            color: #fff;
+            font-weight: 400;
+            margin-left: 40px;
+            text-decoration: none;
+        }
+
+        form {
+            /* padding: 25px;
+            margin: 25px;
+            box-shadow: 0 2px 5px #f5f5f5; 
+            background: #f5f5f5; 
+            line-height: 43px;*/
+            width: 70%;
+            padding: 10px 15px 0px 15px;
+            border: 4px solid #4ea0d8;
+            border-radius: 10px;  
+            -webkit-border-radius: 10px; /*targets chrome and safari*/
+            -moz-border-radius: 10px; /*targets firefox*/
+            -ms-border-radius: 10px; /*targets internet explorer*/
+            -o-border-radius: 10px; /*targets opera mini*/
+
+            overflow: auto;
+            background-color: #f4f4f4;
+        }
+
+        form div {
+            margin-bottom: 20px;
+        }
+
+        form label {
+            display: inline-block;
+            width: 100px;
+            font-weight: bold;
+        }
+
+        form input[type='text'], form input[type='email'], form input[type='password']{
+            border: #ccc 1px solid;
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            border-radius: 5px;
+            height: 25px;
+            width: 65%;
+        }
+
+        button {
+        width: 80%;
+        height: 44px;
+        display: flex;
+        flex-wrap: single-line;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        background-color: #1db096;
+        border-radius: 20px;
+        box-shadow: 5px 10px 30px rgba(24, 139,119, 0.2);
+        }
+
+        button:hover {
+        background-color: #23cdaf;
+        transition: all ease 0.2;
+        }
+
+    </style>
+</head>
+<body>
+    <section id="content"></section>
+        <header id="header">
+            <a href="#"><h2><span>Art-isan</span></h2></a>
+            <ul class="menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Categories</a></li>
+                <li><a href="#">What's New</a></li>
+                <li><a href="contacts.html">Contact</a></li>
+            </ul>
+        </header>
+
+    
+        <section id="login_sect">
+            <form class="form" id="login">
+                <label >Register</label>
+                <div>
+                    <label>Username: </label>
+                    <input type="text" name="name">
+                </div>
+                
+                <div>
+                    <label>Password: </label>
+                    <input type="password" name="password">
+                </div>
+                
+                <div>
+                    <label>Confirm password:</label>
+                    <input type="password" name="password">
+                </div>
+                
+                <div><button>Login</button></div>	
+            </form>
+        </section>
+    
+        <div class="spacing"></div>
+    
+        <section id="signup_sect">
+            <form class="form" id="reg">
+                <label >Register</label>
+                <div>
+                    <label>Name: </label>
+                    <input type="text" name="name">
+                </div>
+                <div>
+                    <label>Username: </label>
+                    <input type="text" name="name">	
+                </div>
+                <div>
+                    <label>Email Address: </label>
+                    <input type="email" name="email address">
+                </div>
+                <div>
+                    <label>Password: </label>
+                    <input type="password" name="password">
+                </div>
+                <div>
+                    <label>Confirm password:</label>
+                    <input type="password" name="password">
+                </div>
+                <div>
+                    <button>Sign Up</button>
+                </div>	
+            </form>
+        </section>
+    </section>
+</body>
+</html>
